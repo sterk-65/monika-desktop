@@ -1,0 +1,32 @@
+# 忽略: 个人数据/运行时产物/大文件
+# 数据文件(发布版不含, 用户运行后生成)
+config.json
+memory.json
+brain.log
+daily_state.json
+habit.json
+play_history.json
+play_stats.json
+stats.json
+schedule.json
+monika.lock
+*.log
+
+# 运行时
+.venv/
+__pycache__/
+*.pyc
+
+# 音频缓存
+audio/*.wav
+audio/*.mp3
+!audio/song/
+
+# 语音模型(走 Releases, 不入库)
+gpt-sovits/
+gpt-sovits.zip
+monika-source.zip
+
+# 系统
+Thumbs.db
+Desktop.ini
